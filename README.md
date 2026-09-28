@@ -1,3 +1,4 @@
+
 # 🔄 CI/CD Day 1 — First GitHub Actions Pipeline
 
 Started my CI/CD journey by building my first automated CI pipeline using **GitHub Actions**.
@@ -164,6 +165,12 @@ Run Test
 * Triggered the workflow using `git push`
 * Successfully executed an automated test
 * Verified the pipeline with a successful GitHub Actions run
+
+   <img width="956" height="564" alt="Screenshot 2026-09-28 195625" src="https://github.com/user-attachments/assets/05e306d6-224d-4da8-b5c7-d34c21802744" />
+   <img width="958" height="560" alt="Screenshot 2026-09-28 195637" src="https://github.com/user-attachments/assets/4590d33e-0cc7-416b-8559-77dd7c2e81c0" />
+   <img width="959" height="562" alt="Screenshot 2026-09-28 195700" src="https://github.com/user-attachments/assets/67786b26-367a-46e3-81ed-ca47c2b4f2ea" />
+
+
 
 ## 🎯 Next Step
 
