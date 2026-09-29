@@ -1,4 +1,4 @@
-name: First CI Pipeline
+name: Day 2 CI Pipeline
 
 on:
   push:
@@ -6,15 +6,23 @@ on:
       - main
 
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run test
+      - name: Build
         run: |
-          echo "Running CI test..."
+          echo "Starting build..."
           test -f app.txt
-          echo "Test passed!"
+          test -f app-build.txt
+          echo "Build successful!"
+
+      - name: Test
+        run: |
+          echo "Running tests..."
+          test -f test.txt
+          grep "CI/CD Test Passed" test.txt
+          echo "All tests passed!"
